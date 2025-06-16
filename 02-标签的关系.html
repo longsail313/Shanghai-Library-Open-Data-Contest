@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML标签关系示例</title>
+</head>
+<body>
+    <!-- 父子关系示例 -->
+    <div class="parent">
+        <!-- div是父元素，p是子元素 -->
+        <p>这是子元素1</p>
+        <p>这是子元素2</p>
+    </div>
+
+    <!-- 兄弟关系示例 -->
+    <div class="siblings">
+        <!-- 这三个p标签互为兄弟关系 -->
+        <p>这是第一个兄弟元素</p>
+        <p>这是第二个兄弟元素</p>
+        <p>这是第三个兄弟元素</p>
+    </div>
+
+    <!-- 混合关系示例 -->
+    <div class="mixed">
+        <!-- 这个div是父元素 -->
+        <h1>标题</h1>  <!-- h1和p是兄弟关系 -->
+        <p>段落1</p>   <!-- p和p是兄弟关系 -->
+        <p>段落2</p>
+        <ul>           <!-- ul和前面的p是兄弟关系 -->
+            <li>列表项1</li>  <!-- li是ul的子元素 -->
+            <li>列表项2</li>  <!-- li和li是兄弟关系 -->
+        </ul>
+    </div>
+</body>
+</html>

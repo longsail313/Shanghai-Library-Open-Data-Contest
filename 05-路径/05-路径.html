@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML路径教学</title>
+</head>
+<body>
+    <h1>HTML路径教学</h1>
+    
+    <h2>什么是路径？</h2>
+    <p>在HTML中，路径用于指定文件的位置。路径分为两种主要类型：</p>
+    <ul>
+        <li>相对路径：相对于当前文件的位置</li>
+        <li>绝对路径：从网站根目录开始的完整路径</li>
+    </ul>
+
+    <h2>相对路径示例</h2>
+    <h3>1. 同级目录</h3>
+    <p>访问与当前HTML文件在同一目录下的文件：</p>
+    <pre>&lt;img src="1.jpg"&gt;</pre>
+    <img src="1.jpg" alt="同级目录">
+
+    <h3>2. 子目录</h3>
+    <p>访问当前目录下的子目录中的文件：</p>
+    <pre>&lt;img src="05相对路径/3.jpg"&gt;</pre>
+    <img src="05相对路径/3.jpg" alt="子目录">
+
+    <h3>3. 上级目录</h3>
+    <p>访问当前目录的上一级目录中的文件：</p>
+    <pre>&lt;img src="../image.jpg"&gt;</pre>
+
+    <h3>4. 上上级目录</h3>
+    <p>访问当前目录的上上级目录中的文件：</p>
+    <pre>&lt;img src="../../image.jpg"&gt;</pre>
+
+    <h2>绝对路径示例</h2>
+    <h3>1. 网站根目录</h3>
+    <p>从网站根目录开始的路径：</p>
+    <pre>&lt;img src="/images/photo.jpg"&gt;</pre>
+    <img src="05相对路径/3.jpg" alt="网站根目录">
+
+    <h3>2. 完整的URL</h3>
+    <p>使用完整的网址：</p>
+    <pre>&lt;img src="https://example.com/images/photo.jpg"&gt;</pre>
+
+    <h2>路径使用注意事项</h2>
+    <ul>
+        <li>路径区分大小写</li>
+        <li>使用正斜杠（/）而不是反斜杠（\）</li>
+        <li>相对路径中，./ 表示当前目录（可以省略）</li>
+        <li>../ 表示上一级目录</li>
+        <li>确保路径中不包含中文字符</li>
+    </ul>
+
+    <h2>实际应用示例</h2>
+    <div class="example">
+        <h3>图片路径示例：</h3>
+        <pre>
+&lt;!-- 相对路径示例 --&gt;
+&lt;img src="images/logo.png" alt="网站logo"&gt;
+&lt;img src="../images/background.jpg" alt="背景图片"&gt;
+
+&lt;!-- 绝对路径示例 --&gt;
+&lt;img src="/images/banner.jpg" alt="横幅图片"&gt;
+&lt;img src="https://example.com/images/icon.png" alt="图标"&gt;
+        </pre>
+    </div>
+
+    <h2>常见错误</h2>
+    <ul>
+        <li>使用错误的路径分隔符（使用\而不是/）</li>
+        <li>路径大小写不匹配</li>
+        <li>忘记添加文件扩展名</li>
+        <li>使用错误的相对路径层级</li>
+    </ul>
+
+    <h2>最佳实践</h2>
+    <ul>
+        <li>尽量使用相对路径，便于网站迁移</li>
+        <li>保持文件结构清晰，便于管理</li>
+        <li>使用有意义的文件名和目录名</li>
+        <li>避免过深的目录层级</li>
+        <li>定期检查并更新失效的链接</li>
+    </ul>
+</body>
+</html>

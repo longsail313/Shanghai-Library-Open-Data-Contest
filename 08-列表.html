@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML列表教学</title>
+</head>
+<body>
+    <h1>HTML列表教学</h1>
+
+    <h2>1. 无序列表（Unordered List）</h2>
+    <p>无序列表使用 &lt;ul&gt; 标签，每个列表项使用 &lt;li&gt; 标签：</p>
+    <ul>
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>橙子</li>
+    </ul>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;苹果&lt;/li&gt;
+    &lt;li&gt;香蕉&lt;/li&gt;
+    &lt;li&gt;橙子&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <h2>2. 有序列表（Ordered List）</h2>
+    <p>有序列表使用 &lt;ol&gt; 标签，每个列表项使用 &lt;li&gt; 标签：</p>
+    <ol>
+        <li>第一步</li>
+        <li>第二步</li>
+        <li>第三步</li>
+    </ol>
+    <pre>
+&lt;ol&gt;
+    &lt;li&gt;第一步&lt;/li&gt;
+    &lt;li&gt;第二步&lt;/li&gt;
+    &lt;li&gt;第三步&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+
+    <h2>3. 定义列表（Definition List）</h2>
+    <p>定义列表使用 &lt;dl&gt; 标签，包含 &lt;dt&gt;（定义术语）和 &lt;dd&gt;（定义描述）：</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>超文本标记语言，用于创建网页</dd>
+        <dt>CSS</dt>
+        <dd>层叠样式表，用于设计网页样式</dd>
+    </dl>
+    <pre>
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;超文本标记语言，用于创建网页&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;层叠样式表，用于设计网页样式&lt;/dd&gt;
+&lt;/dl&gt;
+    </pre>
+
+    <h2>4. 嵌套列表</h2>
+    <p>列表可以嵌套使用，创建多级列表：</p>
+    <ul>
+        <li>水果
+            <ul>
+                <li>苹果</li>
+                <li>香蕉</li>
+            </ul>
+        </li>
+        <li>蔬菜
+            <ul>
+                <li>胡萝卜</li>
+                <li>白菜</li>
+            </ul>
+        </li>
+    </ul>
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;水果
+        &lt;ul&gt;
+            &lt;li&gt;苹果&lt;/li&gt;
+            &lt;li&gt;香蕉&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;蔬菜
+        &lt;ul&gt;
+            &lt;li&gt;胡萝卜&lt;/li&gt;
+            &lt;li&gt;白菜&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <h2>5. 列表属性</h2>
+    <h3>有序列表属性</h3>
+    <p>type属性：设置列表项标记类型</p>
+    <ol type="A">
+        <li>使用大写字母</li>
+        <li>使用大写字母</li>
+    </ol>
+    <ol type="a">
+        <li>使用小写字母</li>
+        <li>使用小写字母</li>
+    </ol>
+    <ol type="I">
+        <li>使用大写罗马数字</li>
+        <li>使用大写罗马数字</li>
+    </ol>
+    <ol type="i">
+        <li>使用小写罗马数字</li>
+        <li>使用小写罗马数字</li>
+    </ol>
+
+    <h2>6. 列表使用注意事项</h2>
+    <ul>
+        <li>列表项（&lt;li&gt;）必须包含在列表容器（&lt;ul&gt;、&lt;ol&gt;、&lt;dl&gt;）中</li>
+        <li>定义列表中的 &lt;dt&gt; 和 &lt;dd&gt; 必须成对出现</li>
+        <li>列表可以嵌套，但要注意层级不要过深</li>
+        <li>列表项可以包含其他HTML元素</li>
+    </ul>
+
+    <h2>7. 实际应用示例</h2>
+    <h3>导航菜单</h3>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+
+    <h3>步骤说明</h3>
+    <ol>
+        <li>准备材料</li>
+        <li>混合原料</li>
+        <li>放入烤箱</li>
+        <li>等待完成</li>
+    </ol>
+</body>
+</html>

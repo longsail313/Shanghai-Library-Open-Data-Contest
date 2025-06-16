@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML排版标签</title>
+    <style>
+        /* 添加一些基本样式使示例更清晰 */
+        body {
+            font-family: Arial, sans-serif;  /* 设置页面默认字体为Arial，如果没有则使用sans-serif */
+            line-height: 1.6;                /* 设置行高为字体大小的1.6倍，提高可读性 */
+            margin: 20px;                    /* 设置页面主体四周的外边距为20像素 */
+        }
+        .example {
+            border: 1px solid #ccc;          /* 添加1像素宽的灰色实线边框 */
+            padding: 15px;                   /* 设置内容区域的内边距为15像素 */
+            margin: 10px 0;                  /* 设置上下外边距为10像素，左右为0 */
+            background-color: #f9f9f9;       /* 设置背景色为浅灰色 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 标题标签示例 -->
+    <h1>HTML排版标签示例</h1>
+    <p>下面我们将展示常用的HTML排版标签</p>
+
+    <!-- 段落标签示例 -->
+    <div class="example">
+        <h2>1. 段落标签 &lt;p&gt;</h2>
+        <p>这是第一个段落。段落标签用于创建文本段落，会自动在段落之间添加间距。</p>
+        <p>这是第二个段落。每个段落标签都会另起一行。</p>
+    </div>
+
+    <!-- 换行标签示例 -->
+    <div class="example">
+        <h2>2. 换行标签 &lt;br&gt;</h2>
+        <p>这是第一行<br>这是第二行<br>这是第三行</p>
+        <p>注意：&lt;br&gt; 是一个空标签，不需要结束标签</p>
+    </div>
+
+    <!-- 水平线标签示例 -->
+    <div class="example">
+        <h2>3. 水平线标签 &lt;hr&gt;</h2>
+        <p>上面的内容</p>
+        <hr>
+        <p>下面的内容</p>
+        <p>注意：&lt;hr&gt; 也是一个空标签</p>
+    </div>
+
+    <!-- 文本格式化标签示例 -->
+    <div class="example">
+        <h2>4. 文本格式化标签</h2>
+        <p><b>粗体文本</b> 使用 &lt;b&gt; 标签</p>
+        <p><i>斜体文本</i> 使用 &lt;i&gt; 标签</p>
+        <p><u>下划线文本</u> 使用 &lt;u&gt; 标签</p>
+        <p><strong>重要文本</strong> 使用 &lt;strong&gt; 标签</p>
+        <p><em>强调文本</em> 使用 &lt;em&gt; 标签</p>
+        <p><s>删除线文本</s> 使用 &lt;s&gt; 标签</p>
+        <p><small>小文本</small> 使用 &lt;small&gt; 标签</p>
+        <p><sup>上标文本</sup> 使用 &lt;sup&gt; 标签</p>
+        <p><sub>下标文本</sub> 使用 &lt;sub&gt; 标签</p>
+        <p><code>代码文本</code> 使用 &lt;code&gt; 标签</p>
+        <p><pre>预格式化文本</pre> 使用 &lt;pre&gt; 标签</p>
+        <p><kbd>键盘文本</kbd> 使用 &lt;kbd&gt; 标签</p>
+        <p><var>变量文本</var> 使用 &lt;var&gt; 标签</p>
+        <p><mark>高亮文本</mark> 使用 &lt;mark&gt; 标签</p>
+        <p><del>删除文本</del> 使用 &lt;del&gt; 标签</p>
+        <p><ins>插入文本</ins> 使用 &lt;ins&gt; 标签</p>
+        <p><blockquote>引用文本</blockquote> 使用 &lt;blockquote&gt; 标签</p>
+        <p><q>短引用文本</q> 使用 &lt;q&gt; 标签</p>
+        <p><abbr>缩写文本</abbr> 使用 &lt;abbr&gt; 标签</p>
+        <p><cite>引用文本</cite> 使用 &lt;cite&gt; 标签</p>
+        <p><dfn>定义文本</dfn> 使用 &lt;dfn&gt; 标签</p>
+        <p><address>地址文本</address> 使用 &lt;address&gt; 标签</p>
+        <p><bdo>双向文本</bdo> 使用 &lt;bdo&gt; 标签</p>
+        <p><ruby>注音文本</ruby> 使用 &lt;ruby&gt; 标签</p>
+    </div>
+
+    <!-- 引用标签示例 -->
+    <div class="example">
+        <h2>5. 引用标签</h2>
+        <blockquote>
+            这是一段引用文本。使用 &lt;blockquote&gt; 标签可以创建块级引用。
+            引用通常会有缩进效果。
+        </blockquote>
+        <p>行内引用：<q>这是一段行内引用</q> 使用 &lt;q&gt; 标签</p>
+    </div>
+
+    <!-- 预格式化文本示例 -->
+    <div class="example">
+        <h2>6. 预格式化文本 &lt;pre&gt;</h2>
+        <pre>
+这是预格式化文本
+    会保留空格和换行
+        就像这样
+    </pre>
+    </div>
+
+    <!-- 列表标签示例 -->
+    <div class="example">
+        <h2>7. 列表标签</h2>
+        <h3>无序列表 &lt;ul&gt;</h3>
+        <ul>
+            <li>列表项 1</li>
+            <li>列表项 2</li>
+            <li>列表项 3</li>
+        </ul>
+
+        <h3>有序列表 &lt;ol&gt;</h3>
+        <ol>
+            <li>第一项</li>
+            <li>第二项</li>
+            <li>第三项</li>
+        </ol>
+
+        <h3>定义列表 &lt;dl&gt;</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>超文本标记语言</dd>
+            <dt>CSS</dt>
+            <dd>层叠样式表</dd>
+        </dl>
+    </div>
+
+    <!-- 注释说明 -->
+    <div class="example">
+        <h2>8. HTML注释</h2>
+        <p>HTML注释使用 &lt;!-- 注释内容 --&gt; 格式</p>
+        <p>注释不会在浏览器中显示，但可以在源代码中看到</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表格基础教程</title>
+</head>
+<body>
+    <h1>HTML表格基础教程</h1>
+    
+    <h2>1. 基本表格</h2>
+    <p>最基本的表格结构包含 &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; 和 &lt;td&gt; 标签：</p>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>25</td>
+            <td>工程师</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>30</td>
+            <td>设计师</td>
+        </tr>
+    </table>
+
+    <h2>2. 表格常用标签说明</h2>
+    <ul>
+        <li>&lt;table&gt; - 定义表格</li>
+        <li>&lt;tr&gt; - 定义表格行</li>
+        <li>&lt;th&gt; - 定义表头单元格</li>
+        <li>&lt;td&gt; - 定义普通单元格</li>
+    </ul>
+
+    <h2>3. 合并单元格示例</h2>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th colspan="2">联系方式</th>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>电话：123456</td>
+            <td>邮箱：wang@example.com</td>
+        </tr>
+        <tr>
+            <td rowspan="2">赵六</td>
+            <td>电话：789012</td>
+            <td>邮箱：zhao@example.com</td>
+        </tr>
+        <tr>
+            <td>电话：345678</td>
+            <td>邮箱：zhao2@example.com</td>
+        </tr>
+    </table>
+
+    <h2>4. 表格常用属性</h2>
+    <ul>
+        <li>border - 设置表格边框</li>
+        <li>colspan - 设置单元格横向合并</li>
+        <li>rowspan - 设置单元格纵向合并</li>
+    </ul>
+</body>
+</html>
